@@ -46,11 +46,13 @@ Description:
 
 Usage:
 
-     cacheSolve(x)
+     cacheSolve(x, ...)
      
 Arguments:
 
        x: makeCacheMatrix closure with an invertible matrix in it
+
+     ...: aditional parameters passed to solve
 
 Value:
 

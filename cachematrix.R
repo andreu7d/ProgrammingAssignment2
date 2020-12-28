@@ -53,6 +53,8 @@ validate <- function(data){
 #' 
 #' @param x makeCacheMatrix closure with an invertible matrix in it
 #' 
+#' @param ... aditional parameters passed to solve 
+#' 
 #' @return Inverse of x
 #' 
 #' @example 
@@ -76,7 +78,7 @@ cacheSolve <- function(x, ...) {
   }
   
   
-  inv <- solve(data)
+  inv <- solve(data, ...)
   x$setInverse(inv)
   inv
 }
