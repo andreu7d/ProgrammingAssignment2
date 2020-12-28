@@ -1,0 +1,59 @@
+Matrix pseudo object that is able to cache the inverse of a matrix
+
+Description:
+
+     Matrix pseudo object that is able to cache the inverse of a matrix
+
+Usage:
+
+     makeCacheMatrix(x = matrix())
+     
+Arguments:
+
+       x: A matrix that will be used as source data
+
+Value:
+
+     List of methods to call [get, set, getInverse, setInverse]
+
+
+Validates that matrix object that it is non-null, numeric and
+invertible
+
+Description:
+
+     Validates that matrix object that it is non-null, numeric and
+     invertible
+
+Usage:
+
+     validate(data)
+     
+Arguments:
+
+    data: A matrix that is invertible
+
+Value:
+
+     logical TRUE (validated) or FALSE (non-valid)
+
+
+Gets the inverse of a makeCacheMatrix, using cache if possible
+
+Description:
+
+     Gets the inverse of a makeCacheMatrix, using cache if possible
+
+Usage:
+
+     cacheSolve(x)
+     
+Arguments:
+
+       x: makeCacheMatrix closure with an invertible matrix in it
+
+Value:
+
+     Inverse of x
+
+

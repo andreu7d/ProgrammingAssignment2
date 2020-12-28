@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Matrix pseudo object that is able to cache the inverse of a...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for makeCacheMatrix"><tr><td>makeCacheMatrix</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Matrix pseudo object that is able to cache the inverse of a matrix</h2>
+
+<h3>Description</h3>
+
+<p>Matrix pseudo object that is able to cache the inverse of a matrix
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+makeCacheMatrix(x = matrix())
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>A matrix that will be used as source data</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>List of methods to call [get, set, getInverse, setInverse]
+</p>
+
+
+</body></html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Validates that matrix object that it is non-null, numeric and...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for validate"><tr><td>validate</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Validates that matrix object that it is non-null, numeric and invertible</h2>
+
+<h3>Description</h3>
+
+<p>Validates that matrix object that it is non-null, numeric and invertible
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+validate(data)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>A matrix that is invertible</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>logical TRUE (validated) or FALSE (non-valid)
+</p>
+
+
+</body></html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Gets the inverse of a makeCacheMatrix, using cache if...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cacheSolve"><tr><td>cacheSolve</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gets the inverse of a makeCacheMatrix, using cache if possible</h2>
+
+<h3>Description</h3>
+
+<p>Gets the inverse of a makeCacheMatrix, using cache if possible
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+cacheSolve(x)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>makeCacheMatrix closure with an invertible matrix in it</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>Inverse of x
+</p>
+
+
+</body></html>
+
